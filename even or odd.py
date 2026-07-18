@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 ******* WITHOUT USING FUNCTION *******
 """
@@ -32,4 +33,40 @@ if __name__ == "__main__":
         print(f"The Number{user_input} is {result}.")
 
     except ValueError:
+=======
+"""
+******* WITHOUT USING FUNCTION *******
+"""
+
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+"""
+********** USING FUNCTION **********
+"""
+
+def check_even_odd(number):
+    
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+    
+if __name__ == "__main__":
+    try:
+        # Prompt user for input and convert it to an integer
+        user_input = int(input("Enter an integer: "))
+
+         # Call the function and get the result
+        result = check_even_odd(user_input)
+
+        # Print the final result
+        print(f"The Number{user_input} is {result}.")
+
+    except ValueError:
+>>>>>>> d007288122fd9f433c1d1ae8610d7c8df61fa704
         print("Invalid input! Please enter a valid integer.")
