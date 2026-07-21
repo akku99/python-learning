@@ -1,0 +1,14 @@
+# 2x2 Matrix Multiplication
+
+import numpy as np
+
+a = [[1, 2],[2,3]]
+b = [[4, 5],[6,7]]
+print("Matrix A:")
+print(a)
+print("Matrix B:")
+print(b)
+
+c = np.dot(a,b)
+print("Matrix C (A * B):")
+print(c)
